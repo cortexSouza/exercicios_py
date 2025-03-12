@@ -4,9 +4,9 @@ O nome com todas minúsculas
 Quantas letras ao todo (sem considerar espaços)
 Quantas letras tem o primeiro nome.'''
 
-nam = input('Qual o seu nome: ')
-first_nam = nam.split()[0]
-print('Nome com todas as letras em maiúsculas: {}'.format(nam.upper()))
-print('Nome com todas as letras em maiúsculas: {}'.format(nam.lower()))
-print('Letras ao todo sem considerar espaços: {}'.format(len(nam.replace(' ', ''))))
-print('Número de letras no primeiro nome: {}'.format(len(first_nam)))
+nam_complete = str(input('Qual o seu nome completo?: ')).strip()
+print('Seu nome: {}'.format(nam_complete.title()))
+print('Nome em maiusculas: {}'.format(nam_complete.upper())) 
+print('Nome todas em minusculas: {}'.format(nam_complete.lower()))
+print('Numero de letras ao todo: {}'.format(len(nam_complete.replace(' ',''))))
+print('Numero de letras no primeiro nome: {}'.format(len(nam_complete.split()[0])))
